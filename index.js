@@ -36,7 +36,7 @@ const rest = new REST().setToken(token)
 client.once('ready', async () => {
     await rest.put(Routes.applicationCommands(client.user.id), { body: commands })
     console.log('bot is ready');
-    client.user.setActivity("Versa Store", {
+    client.user.setActivity("Wick Studio", {
 type: "STREAMING",
         url: "https://www.twitch.tv/#"
 });
